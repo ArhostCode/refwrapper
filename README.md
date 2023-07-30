@@ -1,5 +1,5 @@
 # RefWrapper
-
+@ardyc (ArhostCode)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -103,10 +103,10 @@ public class Main {
         }, Main.class.getClassLoader());
         
         // Create static wrapper
-        JavaPluginWrapper wrapper = WrapperFactory.createWrapper(JavaObjectWrapper.class, urlClassLoader, "space.ardyc.test.JavaObject");
+        JavaObjectWrapper wrapper = WrapperFactory.createWrapper(JavaObjectWrapper.class, urlClassLoader, "space.ardyc.test.JavaObject");
         
         // Get non-static instance
-        JavaPluginWrapper object = wrapper.getInstance();
+        JavaObjectWrapper object = wrapper.getInstance();
         
         // Get listener object and call createEntity method
         EntityWrapper entity = object.getListener().createEntity("sample");
